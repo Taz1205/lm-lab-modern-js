@@ -4,6 +4,5 @@ export const sayHello = (person = 'you') => {
  // return `Hello, ${person === undefined ? "you!" : person + "!"}`;
   //return `Hello, ${person || "you!"}`;
   return `Hello, ${person}!`;
-  
 };
 
