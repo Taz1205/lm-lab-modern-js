@@ -6,7 +6,6 @@ export function introduction(person) {
   const pet = person.pet;*/
 
   //return "Hello my name is " + name + " and I live in " + city + " with " + pet;
-  //const greetings = [];
   const personInfo = Object.entries(person);
   {
     return (

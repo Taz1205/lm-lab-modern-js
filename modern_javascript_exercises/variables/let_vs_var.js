@@ -3,17 +3,27 @@
 // Problems with var
 
 function count() {
-  for (var i = 0; i < 5; i++) {
+  let i;
+  for (i = 0; i < 5; i++) {
     console.log(i + " inside the forLoop");
   }
   console.log(i + " outside the forLoop");
 }
 
-// count(); // <---- uncomment me!
+count(); // <---- uncomment me!
 
 // Another problem with var is that we can overwrite it, like this:
 
-var greeting = "Hello 😘";
-var greeting = "Not today, pal! 😤";
+//var greeting = "Hello 😘";
+//var greeting = "Not today, pal! 😤";
 
-// console.log(greeting) // <----- uncomment me!
+const greeting = "Hello 😘";
+// greeting = "Not today, pal! 😤"; This will throw an error as const cannot be reassigned
+
+//OR
+
+let greeting1 = "Hello 😘";
+greeting1 = "Not today, pal! 😤";
+
+
+console.log(greeting, greeting1); // <----- uncomment me!
